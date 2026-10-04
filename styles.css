@@ -1,0 +1,15 @@
+/* The row the arrow keys are on. The plugin moves Obsidian's own focus ring
+   (has-focus) and tints it with the accent, so there is exactly one cursor. */
+.nav-files-container:focus { outline: none; }
+.nav-files-container .tree-item-self.explorer-arrows-cursor {
+  box-shadow: inset 0 0 0 1px var(--interactive-accent);
+  border-radius: var(--radius-s);
+}
+
+/* Image / video zoom: drag to pan. Zoom is a transform only, so the media
+   keeps Obsidian's fit-to-pane size underneath. */
+.workspace-leaf-content[data-type="image"] img { cursor: grab; -webkit-user-drag: none; }
+.explorer-arrows-media { will-change: transform; }
+.explorer-arrows-media.is-panning { cursor: grabbing; }
+.workspace-leaf-content[data-type="image"] .view-content,
+.workspace-leaf-content[data-type="video"] .view-content { overflow: hidden; }

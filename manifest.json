@@ -1,0 +1,10 @@
+{
+  "id": "explorer-arrows",
+  "name": "Explorer Arrows",
+  "version": "1.4.1",
+  "minAppVersion": "1.5.0",
+  "description": "Keyboard navigation for the file explorer (arrows, Page Up/Down, Ctrl+Up/Down, folders) that keeps focus in the explorer, plus Ctrl+scroll zoom and drag-to-pan for image and video files.",
+  "author": "Paulo Zacchello",
+  "authorUrl": "https://github.com/paulozac",
+  "isDesktopOnly": true
+}
